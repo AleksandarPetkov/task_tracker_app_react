@@ -1,9 +1,9 @@
 import { FaTimes } from 'react-icons/fa'
 
-const Task = ({ task, deleteTask }) => {
+const Task = ({ task, deleteTask, reminder }) => {
 
     return (
-        <div className='task'>
+        <div className='task' onDoubleClick={ () => reminder(task.id) }>
             {/* 
              Importing react icons component (FaTimes)
              onClick={deleteTask} invoke deleteById function from App.js

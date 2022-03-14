@@ -31,11 +31,16 @@ function App() {
     setTask(tasks.filter((task) => task.id !== id));
   }
 
+  //Toggle reminder
+  const toggleReminder = (id) => {
+    console.log('Toggle', id)
+  }
+
   return (
     <div className='container'>
       {/* We can pass arguments(props) into our component*/}
       <Header title='Hey' />
-      <Task tasks={tasks} deleteTask={deleteById}/>
+      <Task tasks={tasks} deleteTask={deleteById} reminder = {toggleReminder} />
     </div>
   );
 }
