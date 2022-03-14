@@ -1,7 +1,10 @@
+import Header from "./components/Header";
+
 function App() {
   return (
     <div className='container'>
-      <h1>Hello</h1>
+       {/* We can pass arguments(props) into our component*/}
+      <Header title='ko4'/>
     </div>
   );
 }
