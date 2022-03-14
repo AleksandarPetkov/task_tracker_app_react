@@ -1,0 +1,27 @@
+Commands
+npx create-react-app react-task-tracker
+cd /react-task-tracker
+npm start
+
+*** Components ***
+ Components let us split the UI into independent, reusable pieces, and think about each piece in isolation. 
+ React lets you define components as classes or functions
+ -Define component by function.Accepts a single “props” (which stands for properties) object argument with data and returns a React element:
+ function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+ 
+ ES6 class to define a component:
+ class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+
+*** JSX ***
+
+*** Virtual DOM ***
+
+*** Hooks ***
+
+*** package.json : contains all dependacies
